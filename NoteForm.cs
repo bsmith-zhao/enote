@@ -256,7 +256,7 @@ namespace enote
         {
             using (var br = new SolidBrush(c))
             {
-                g.FillRectangle(br, width/2-13, 28, 26, 5);
+                g.FillRectangle(br, width/2-15, 28, 30, 5);
             }
         }
 
