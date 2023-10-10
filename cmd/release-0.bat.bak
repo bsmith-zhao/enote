@@ -1,0 +1,4 @@
+set dst="C:\prj\SyncFavor\0"
+echo %dst%
+xcopy "P:\SyncFavor\app" %dst% /e /y /exclude:exclude.txt
+pause

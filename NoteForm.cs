@@ -14,8 +14,9 @@ namespace enote
     {
         public string notePath;
 
-        const string AppName = "EncryptNote";
-        const string AppVersion = "1.1.0";
+        string AppName => Application.ProductName;
+        string AppVersion => Application.ProductVersion;
+
         const string NoteFilter = "Encrypt Note (*.enote)|*.enote|All Files (*.*)|*.*";
 
         string confPath => $"{this.appTrunk()}.conf";
