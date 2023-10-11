@@ -317,7 +317,7 @@ namespace enote
         void updateTitle()
         {
             var mark = modify ? "*" : "";
-            this.Text = $"{AppName}{AppVersion} - {noteUI.TextLength}{mark} - [{notePath ?? "none"}]";
+            this.Text = $"{AppName} {AppVersion} - {noteUI.TextLength}{mark} - [{notePath ?? "none"}]";
         }
 
         private void openBtn_Click(object sender, EventArgs e)

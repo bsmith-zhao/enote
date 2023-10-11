@@ -60,14 +60,14 @@
     <Compile Include="util\crypt\PackCrypt.cs" />
     <Compile Include="util\crypt\AeadSymmeCrypt.cs" />
     <Compile Include="util\crypt\SymmeCrypt.cs" />
-    <Compile Include="NoteFile.cs" />
-    <Compile Include="NoteConf.cs" />
-    <Compile Include="AppConf.cs" />
-    <Compile Include="NoteMeta.cs" />
-    <Compile Include="OptionDialog.cs">
+    <Compile Include="note\NoteFile.cs" />
+    <Compile Include="note\NoteConf.cs" />
+    <Compile Include="note\AppConf.cs" />
+    <Compile Include="note\NoteMeta.cs" />
+    <Compile Include="note\OptionDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OptionDialog.Designer.cs">
+    <Compile Include="note\OptionDialog.Designer.cs">
       <DependentUpon>OptionDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="util\crypt\AeadCrypt.cs" />
@@ -106,10 +106,10 @@
     <Compile Include="util\ext\ThreadEx.cs" />
     <Compile Include="util\Json.cs" />
     <Compile Include="util\Loc.cs" />
-    <Compile Include="NoteForm.cs">
+    <Compile Include="note\NoteForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NoteForm.Designer.cs">
+    <Compile Include="note\NoteForm.Designer.cs">
       <DependentUpon>NoteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -133,8 +133,8 @@
       <DependentUpon>PwdDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="util\Test.cs" />
-    <Compile Include="WriteVerify.cs" />
-    <EmbeddedResource Include="NoteForm.resx">
+    <Compile Include="note\WriteVerify.cs" />
+    <EmbeddedResource Include="note\NoteForm.resx">
       <DependentUpon>NoteForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -148,7 +148,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="OptionDialog.resx">
+    <EmbeddedResource Include="note\OptionDialog.resx">
       <DependentUpon>OptionDialog.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
