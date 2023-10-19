@@ -133,7 +133,7 @@
       <DependentUpon>PwdDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="util\Test.cs" />
-    <Compile Include="note\WriteVerify.cs" />
+    <Compile Include="note\VerifyWrite.cs" />
     <EmbeddedResource Include="note\NoteForm.resx">
       <DependentUpon>NoteForm.cs</DependentUpon>
       <SubType>Designer</SubType>

@@ -9,7 +9,7 @@ namespace enote
 {
     public class AppConf : NoteConf
     {
-        public bool ShowVerifyRtf { get; set; } = false;
+        public bool ShowVerifyRtf { get; set; } = true;
 
         public JpegQuality JpgQuality { get; set; } = JpegQuality.Balance;
         public long getJpgQuality() => (long)JpgQuality;

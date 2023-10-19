@@ -1,4 +1,4 @@
-set dst="C:\prj\EncryptNote\1.1.1"
+set dst="C:\prj\EncryptNote\enote1.1.2"
 echo %dst%
 
 mkdir %dst%

@@ -9,7 +9,7 @@ using util.ext;
 
 namespace enote
 {
-    public class WriteVerify : Stream
+    public class VerifyWrite : Stream
     {
         public string error;
         public Stream data;

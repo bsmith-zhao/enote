@@ -5,6 +5,6 @@ mkdir %dst%
 
 del /Q /S %dst%
 
-xcopy "P:\EncryptNote\app" %dst% /e /y /exclude:exclude.txt
+xcopy "P:\EncryptNote\app" %dst% /e /y /v /exclude:exclude.txt
 
 pause

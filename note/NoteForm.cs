@@ -288,11 +288,11 @@ namespace enote
         private void setPwdBtn_Click(object sender, EventArgs e)
         {
             var pwd = setNewPwd(notePath);
-            if (null == pwd)
+            if (pwd == null)
                 return;
 
-            if (null != notePath)
-                updateModify(true);
+            if (notePath != null)
+                save();
         }
 
         void updateModify(bool modify)
@@ -562,15 +562,20 @@ namespace enote
             if (notePath == null)
                 return;
 
-            this.trydo(()=> verifyNote(notePath, null));
+            this.trydo(()=> 
+            {
+                verifyNote(notePath, null);
+            });
         }
 
         void verifyNote(string path, byte[] pwd, bool showRtf = true)
         {
             var data = readData(path, ref pwd);
+            if (data == null)
+                return;
             data.Position = 0;
 
-            var verify = new WriteVerify { data = data };
+            var verify = new VerifyWrite { data = data };
             noteUI.saveRtf(verify);
             verify.Flush();
 
